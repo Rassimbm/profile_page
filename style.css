@@ -7,9 +7,10 @@
     font-family: 'Martian Mono', monospace;
     font-family: 'Mooli', sans-serif;
     font-family: 'Roboto', sans-serif;
+
 }
 
-.top {
+.header {
     height: 80px;
     display: flex;
     align-items: center;
@@ -19,13 +20,14 @@
     
 }
 
-.nav-links {
+.head-links {
     width: 950px;
+    margin: 0px auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-.nav-links ul {
+.head-links ul {
     display: flex;
     align-items: center;
     flex: 1;
@@ -33,15 +35,15 @@
     list-style-type: none;
 }
 
-.nav-links li {
+.head-links li {
     padding-left: 30px;
 }
 
-.nav-links #prof-link {
+.head-links #prof-link {
     font-weight: bolder;
 }
 
-.nav-links button {
+.head-links button {
     width: 90px;
     height: 30px;
     background-color: aqua;
