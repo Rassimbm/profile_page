@@ -1,7 +1,52 @@
 * {
     margin: 0px;
     padding: 0px;
+}
+
+.home-page {
     font-family: 'Martian Mono', monospace;
     font-family: 'Mooli', sans-serif;
     font-family: 'Roboto', sans-serif;
+}
+
+.top {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    
+}
+
+.nav-links {
+    width: 950px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-links ul {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content:flex-start;
+    list-style-type: none;
+}
+
+.nav-links li {
+    padding-left: 30px;
+}
+
+.nav-links #prof-link {
+    font-weight: bolder;
+}
+
+.nav-links button {
+    width: 90px;
+    height: 30px;
+    background-color: aqua;
+    color: white;
+    border: 5px;
+    border-radius: 5px;
+    box-shadow: 7px 3px 3px white;
 }
