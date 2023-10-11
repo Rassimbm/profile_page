@@ -1,24 +1,28 @@
 console.log("page loaded ...");
 
 var userName = document.querySelector(".card-body h1");
-console.log(userName);
 
 function editName() {
     userName.innerText = "Stacy A paterson";
 }
 
 var cnxRequest = document.querySelector(".user-line");
-console.log(cnxRequest);
-var rqstCount = document.querySelector(".connections");
-console.log(rqstCount);
-var count = 2;
 
-function accept() {
-    count--;
-    rqstCount.innerText = count;
-    cnxRequest.remove();
+var count1 = document.querySelector(".connections-rqst");
+var count2 = document.querySelector(".your-connections");
+
+count1.style.marginRight = "10px";
+count2.style.marginRight = "10px";
+
+function accept(id) {
+    count1.innerText--;
+    count2.innerText++;
+    var element = document.querySelector(id);
+    element.remove();
 }
 
-function decline() {
-    cnxRequest.remove()
+function decline(id) {
+    count1.innerText--;
+    var element = document.querySelector(id);
+    element.remove();
 }
