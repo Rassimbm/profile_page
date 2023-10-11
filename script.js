@@ -9,9 +9,14 @@ function editName() {
 
 var cnxRequest = document.querySelector(".user-line");
 console.log(cnxRequest);
+var rqstCount = document.querySelector(".connections");
+console.log(rqstCount);
+var count = 2;
 
 function accept() {
-    cnxRequest.remove()
+    count--;
+    rqstCount.innerText = count;
+    cnxRequest.remove();
 }
 
 function decline() {
